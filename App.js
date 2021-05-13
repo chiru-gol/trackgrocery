@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import * as Font from 'expo-font';
 import Home from './screens/Home'
 import {AppLoading} from 'expo'
-import Navigator from './routes/HomeStack'
 const getFonts = () => {Font.loadAsync({
     'nunito-regular':require('./assets/fonts/NunitoSans-Regular.ttf'),
     'nunito-bold': require('./assets/fonts/NunitoSans-Bold.ttf')
@@ -19,7 +18,7 @@ export default function App() {
     //   <StatusBar style="auto" />
     // </View>
     // <Home/>
-    <Navigator/>
+    <Home/>
   );
   // }else{
   // return(
